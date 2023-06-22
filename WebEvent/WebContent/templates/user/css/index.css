@@ -1,0 +1,285 @@
+body{
+   background: url(../images/bg2.jpg) center center/cover no-repeat fixed;
+}
+.banner {
+    height: 690px !important;
+    object-fit: cover;
+}
+.titletDiv hr {
+    color: orangered;
+    width: 100px;
+    margin: auto;
+    border-width: 3px 0 0;
+}
+
+.cardDV {
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    position: relative;
+}
+
+.cardDV img {
+    height: 20rem;
+    border-radius: 5px;
+    object-fit: cover;
+}
+/* HIEU UNG DICH VU */
+.huCard {
+    position: relative;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    filter: grayscale(0);
+  transition: 0.5s ease-in-out;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .huCard:hover .image {
+    background: rgba(0,0,0,0.6);
+    filter: grayscale(1);
+    transition: 0.5s ease-in-out;
+  }
+  
+  .huCard:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    color: orangered;
+    font-size: 30px;
+    padding: 16px 32px;
+  }
+  /* HIEU UNG TIN TUC SU KIEN */
+  .CardTTHu {
+    position: relative;
+    height: 250px;
+  }
+  
+  .imageTT {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: white; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: #FF6633;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .CardTTHu:hover .overlay {
+    opacity: 1;
+  }
+  .cardDV:hover{
+    border-color: #FF6633;
+  }
+  /* FOOTER */
+  .chinhUlFooter {
+    list-style: none;
+    text-align: left;
+}
+
+.ChinhFooter {
+    text-decoration: none;
+    color: white;
+}
+
+.chinhHover:hover {
+    color: lightgrey;
+}
+
+.chinhcotHailiFooter {
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;
+}
+
+.cotFOoter {
+    display: flex;
+    justify-content: center;
+}
+.cotFOoter ul li a{
+  color: white!important;
+}
+.chuFooter:hover {
+    color: blue;
+}
+/* CSS iICON TREN THANH MENU */
+.iconMenu {
+  list-style: none;
+}
+
+.iconHover:hover {
+  background-color: white;
+  color: red;
+}
+
+.fa-cart-arrow-down:before {
+  font-size: 20px;
+}
+
+.fa-search:before {
+  font-size: 25px;
+}
+
+.fa-user:before {
+  font-size: 20px;
+}
+/* CSS FORM DANG NHAP VA FORM DANG KY */
+/* CSS Form dang nhap */
+.modal-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.btn-close {
+  position: absolute;
+  right: 0;
+  padding: 1em;
+}
+
+h1 {
+  font-size: 2.3em;
+  font-weight: bold;
+}
+
+.myform {
+  padding: 2em;
+  max-width: 100%;
+  color: #fff;
+  box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+}
+
+@media (max-width: 576px) {
+  .myform {
+      max-width: 90%;
+      margin: 0 auto;
+  }
+}
+
+.form-control:focus {
+  box-shadow: inset 0 -1px 0 #7e7e7e;
+  background-color: inherit;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.form-control {
+  background-color: inherit;
+  color: #fff;
+  padding-left: 0;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+}
+
+.myform .btn {
+  width: 100%;
+  font-weight: 800;
+  background-color: #fff;
+  border-radius: 0;
+  padding: 0.5em 0;
+}
+
+.myform .btn:hover {
+  background-color: inherit;
+  color: #fff;
+  border-color: #fff;
+}
+
+p {
+  text-align: center;
+  padding-top: 2em;
+  color: white;
+}
+
+p a {
+  color: #e1e1e1;
+  text-decoration: none;
+}
+
+p a:hover {
+  color: #fff;
+}
+/* CSS pagination VIDEO SU KIEN */
+.pagination{
+  display: flex;
+  justify-content: center;
+}
+.pagination li a{
+  color: #eee;
+  background-color: #191818;
+  border: none;
+}
+.pagination li a:hover{
+  color: black;
+  background-color: #FF6633;
+  border: none;
+}
+/* chi tiet video */
+@media only screen and (min-width: 768px){
+    .card{
+      width: 70%;
+    }
+  }
+  video {
+    opacity: 0.5;
+  }
+/* iframe{
+    width: 100%;
+    height: auto;
+} */
+.card{
+    width: 100%;
+    height: 25%;
+    border: none;
+}
+.itemCard{
+    float: left;
+    width: 50%;
+}
+.card .post-title-item a{
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+}
+.video_list{
+    height:150px;
+	margin-bottom: 5px;
+}
+.card .post-date-item{
+    float: left;
+}
+.motaND{
+    margin-bottom: 0px;
+}
